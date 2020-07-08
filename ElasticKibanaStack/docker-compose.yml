@@ -1,27 +1,4 @@
-# version: "3"
-
-# services:
-#   elasticsearch:
-#     image: docker.elastic.co/elasticsearch/elasticsearch:7.8.0
-#     container_name: elasticsearch
-#     environment:
-#       - node.name=elasticsearch
-#       - cluster.name=datasearch
-#       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-#       - cluster.initial_master_nodes=elasticsearch
-#     ports:
-#       - "9200:9200"
-
-#   kibana:
-#     image: docker.elastic.co/kibana/kibana:7.8.0
-#     ports:
-#       - "5601:5601"
-#     environment:
-#       - ELASTICSEARCH_URL=http://elasticsearch:9200
-#     depends_on:
-#       - elasticsearch
-
-version: "2.1"
+version: "3"
 services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.8.0
